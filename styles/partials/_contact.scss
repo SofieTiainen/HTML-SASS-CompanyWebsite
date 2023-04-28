@@ -1,0 +1,147 @@
+.main-wrapper {
+    main {
+        height: 100%;
+
+        div.contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div.info-and-img {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+
+                img {
+                    max-width: 80%;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                div.info {
+                    p {
+                        margin-bottom: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            div.form-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                form.form {
+                    // background-color: lightseagreen;
+                    background-color: rgba(32, 178, 171, 0.477);
+                    padding: 20px;
+                    border-radius: 10px;
+
+                    p {
+                        margin-top: 20px;
+                    }
+
+                    div.row {
+                        div.col-25 {
+                            font-weight: 600;
+                            letter-spacing: 2px;
+                        }
+
+                        div.col-75 {
+                            margin-bottom: 5px;
+                        }
+
+                        #medd {
+                            min-width: 100%;
+                        }
+
+                        input.submit {
+                            border: 1px solid black;
+                            background-color: white;
+                            padding: 5px;
+                            border-radius: 3px;
+                            font-size: 18px;
+                        }
+
+                        input.submit:hover {
+                            background-color: black;
+                            color: white;
+                        }
+
+                        input.submit:active {
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 974px) {
+    .main-wrapper {
+        main {
+            div.contact-container {
+                div.info-and-img {
+                    flex-direction: row;
+                    margin-bottom: 50px;
+
+                    img {
+                        padding-right: 50px;
+                    }
+
+                    div.info {
+                        border-left: 2px solid black;
+                        border-right: 2px solid black;
+                        height: 400px;
+                        width: 640px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            margin-bottom: 5px;
+                            font-weight: 600;
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                div.form-div {
+                    form.form {
+                        min-width: 120%;
+                        min-height: 120%;
+
+                        p {
+                            margin-top: 20px;
+                        }
+
+                        div.row {
+                            div.col-25 {
+                                font-weight: 600;
+                                letter-spacing: 2px;
+                            }
+
+                            div.col-75 {
+                                margin-bottom: 20px;
+                                padding-right: 50px;
+
+                                input,
+                                #ämne {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            #medd {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

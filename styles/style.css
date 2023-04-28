@@ -1,0 +1,604 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body h1 {
+  color: black;
+}
+body main {
+  height: 100vh;
+}
+
+.main-wrapper div.background-and-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper div.background-and-btn img.background-picture-mobile,
+.main-wrapper div.background-and-btn img.background-picture-desktop {
+  position: relative;
+  z-index: 0;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100vh;
+}
+.main-wrapper div.background-and-btn button.main-action {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  z-index: 1;
+  max-width: 70%;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  padding: 10px;
+}
+.main-wrapper div.background-and-btn button.main-action a {
+  color: black;
+  text-decoration: none;
+  font-size: 26px;
+}
+.main-wrapper div.background-and-btn button.main-action:hover {
+  background-color: rgb(28, 155, 148);
+}
+.main-wrapper header.header {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  min-width: 100%;
+}
+.main-wrapper header {
+  max-width: 100%;
+  min-width: 100%;
+}
+.main-wrapper header .header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-wrapper header .header-container .logo-and-h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.main-wrapper header .header-container .logo-and-h1 .logo {
+  width: 50px;
+}
+.main-wrapper header .header-container .logo-and-h1 h1 {
+  color: black;
+  font-size: 34px;
+  text-align: center;
+}
+.main-wrapper header .header-container .logo-and-h1 div.h1-and-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper header .header-container nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  list-style-position: inside;
+  letter-spacing: 1px;
+}
+.main-wrapper header .header-container nav ul li {
+  padding: 8px;
+}
+.main-wrapper header .header-container nav ul li a {
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.main-wrapper header .header-container nav ul li a.underline {
+  text-decoration: underline;
+}
+.main-wrapper header .header-container nav ul li a:hover {
+  background-color: rgba(32, 178, 171, 0.477);
+  border-radius: 10px;
+  padding: 5px;
+}
+.main-wrapper header .header-container p {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@media (min-width: 650px) {
+  .main-wrapper div.background-and-btn img.background-picture-mobile {
+    display: none;
+  }
+  .main-wrapper div.background-and-btn img.background-picture-desktop {
+    display: block;
+  }
+  .main-wrapper header .header-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 974px) {
+  .main-wrapper div.background-and-btn button.main-action a {
+    font-size: 40px;
+  }
+  .main-wrapper header .header-container {
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .main-wrapper header .header-container .logo-and-h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .main-wrapper header .header-container .logo-and-h1 .logo {
+    width: 100px;
+  }
+  .main-wrapper header .header-container .logo-and-h1 h1 {
+    font-size: 54px;
+  }
+  .main-wrapper header .header-container .logo-and-h1 div.h1-and-p {
+    align-items: flex-start;
+  }
+  .main-wrapper header .header-container .logo-and-h1 div.h1-and-p p {
+    font-size: 14px;
+  }
+  .main-wrapper header .header-container nav ul {
+    margin-top: 20px;
+  }
+  .main-wrapper header .header-container nav ul li a {
+    font-size: 24px;
+  }
+}
+.main-wrapper footer {
+  background-color: black;
+  min-width: 100%;
+}
+.main-wrapper footer div.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.main-wrapper footer div.footer-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-position: inside;
+  list-style: none;
+  padding-bottom: 5px;
+}
+.main-wrapper footer div.footer-container ul li {
+  padding-top: 10px;
+}
+.main-wrapper footer div.footer-container ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+}
+.main-wrapper footer div.footer-container ul li a:hover {
+  text-decoration: underline;
+}
+.main-wrapper footer div.footer-container div.logo-and-p-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper footer div.footer-container div.logo-and-p-container p {
+  color: white;
+  font-size: 12px;
+}
+
+@media (min-width: 974px) {
+  .main-wrapper footer div.footer-container ul li a {
+    font-size: 16px;
+  }
+  .main-wrapper footer div.footer-container div.logo-and-p-container p {
+    font-size: 14px;
+  }
+}
+.main-wrapper main {
+  height: 100%;
+}
+.main-wrapper main div.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper main div.contact-container div.info-and-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.main-wrapper main div.contact-container div.info-and-img img {
+  max-width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-wrapper main div.contact-container div.info-and-img div.info p {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.main-wrapper main div.contact-container div.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper main div.contact-container div.form-div form.form {
+  background-color: rgba(32, 178, 171, 0.477);
+  padding: 20px;
+  border-radius: 10px;
+}
+.main-wrapper main div.contact-container div.form-div form.form p {
+  margin-top: 20px;
+}
+.main-wrapper main div.contact-container div.form-div form.form div.row div.col-25 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.main-wrapper main div.contact-container div.form-div form.form div.row div.col-75 {
+  margin-bottom: 5px;
+}
+.main-wrapper main div.contact-container div.form-div form.form div.row #medd {
+  min-width: 100%;
+}
+.main-wrapper main div.contact-container div.form-div form.form div.row input.submit {
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.main-wrapper main div.contact-container div.form-div form.form div.row input.submit:hover {
+  background-color: black;
+  color: white;
+}
+.main-wrapper main div.contact-container div.form-div form.form div.row input.submit:active {
+  border: 0px;
+}
+
+@media (min-width: 974px) {
+  .main-wrapper main div.contact-container div.info-and-img {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  .main-wrapper main div.contact-container div.info-and-img img {
+    padding-right: 50px;
+  }
+  .main-wrapper main div.contact-container div.info-and-img div.info {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    height: 400px;
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-wrapper main div.contact-container div.info-and-img div.info p {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .main-wrapper main div.contact-container div.form-div form.form {
+    min-width: 120%;
+    min-height: 120%;
+  }
+  .main-wrapper main div.contact-container div.form-div form.form p {
+    margin-top: 20px;
+  }
+  .main-wrapper main div.contact-container div.form-div form.form div.row div.col-25 {
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .main-wrapper main div.contact-container div.form-div form.form div.row div.col-75 {
+    margin-bottom: 20px;
+    padding-right: 50px;
+  }
+  .main-wrapper main div.contact-container div.form-div form.form div.row div.col-75 input,
+  .main-wrapper main div.contact-container div.form-div form.form div.row div.col-75 #ämne {
+    font-size: 20px;
+  }
+  .main-wrapper main div.contact-container div.form-div form.form div.row #medd {
+    font-size: 20px;
+  }
+}
+.main-wrapper {
+  height: 100%;
+}
+.main-wrapper main {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px;
+}
+.main-wrapper main h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.main-wrapper main div.all-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper main div.all-steps div.step {
+  background-color: rgba(32, 178, 171, 0.477);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.053);
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+.main-wrapper main div.all-prices-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-wrapper main div.all-prices-container div.price-container {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.main-wrapper main div.all-prices-container div.price-container div.h3-and-img {
+  display: flex;
+  justify-content: space-between;
+}
+.main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn p {
+  font-weight: 600;
+}
+.main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn button {
+  border: 1px solid black;
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 3px;
+}
+.main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn button:hover {
+  background-color: black;
+  color: white;
+}
+.main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn button:active {
+  border: 0px;
+}
+.main-wrapper main div.all-prices-container div.price-container:hover {
+  border: 1px solid black;
+}
+
+@media (min-width: 800px) {
+  .main-wrapper main h2 {
+    font-size: 32px;
+  }
+  .main-wrapper main div.all-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .main-wrapper main div.all-steps img {
+    display: block;
+  }
+  .main-wrapper main div.all-steps div.step {
+    padding: 50px;
+    border-radius: 50%;
+    max-width: 350px;
+    min-width: 300px;
+    margin: 20px;
+  }
+  .main-wrapper main div.all-steps div.step h3 {
+    font-size: 34px;
+  }
+  .main-wrapper main div.all-steps div.step p {
+    font-size: 20px;
+  }
+  .main-wrapper main div.all-prices-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+  .main-wrapper main div.all-prices-container div.price-container {
+    max-width: 320px;
+    min-width: 30px;
+    max-height: 270px;
+    min-height: 270px;
+  }
+  .main-wrapper main div.all-prices-container div.price-container div.h3-and-img {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-wrapper main div.all-prices-container div.price-container div.description p {
+    font-size: 20px;
+  }
+  .main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn p {
+    font-weight: 600;
+  }
+  .main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn button {
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn button:hover {
+    background-color: black;
+    color: white;
+  }
+  .main-wrapper main div.all-prices-container div.price-container div.description div.price-and-btn button:active {
+    border: 0px;
+  }
+}
+.main-wrapper main div.reference-container article.reference {
+  background-color: white;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.612);
+}
+.main-wrapper main div.reference-container article.reference h3 {
+  font-size: 14px;
+}
+
+@media (min-width: 800px) {
+  .main-wrapper main div.reference-container article.reference {
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.612);
+  }
+  .main-wrapper main div.reference-container article.reference h3 {
+    font-size: 24px;
+  }
+  .main-wrapper main div.reference-container article.reference p {
+    font-size: 22px;
+  }
+}
+.main-wrapper main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper main div.about-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+.main-wrapper main div.about-container div.slogan {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-wrapper main div.about-container div.slogan h2 {
+  background-color: rgba(32, 178, 171, 0.477);
+  padding: 20px;
+  border-radius: 20px;
+}
+.main-wrapper main div.about-container div.text-about p {
+  padding-top: 15px;
+}
+.main-wrapper main div.people-container div.people article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 290px;
+}
+.main-wrapper main div.people-container div.people article img {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.main-wrapper main div.people-container div.people article h3 {
+  margin-bottom: 5px;
+}
+.main-wrapper main div.people-container div.people article p:nth-of-type(1) {
+  font-weight: 600;
+}
+.main-wrapper main div.people-container div.people article p:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 700px) {
+  .main-wrapper main {
+    width: 100vw;
+  }
+  .main-wrapper main div.about-container {
+    align-items: center;
+  }
+  .main-wrapper main div.about-container div.text-about {
+    max-width: 70%;
+  }
+  .main-wrapper main div.about-container div.text-about p {
+    font-size: 20px;
+  }
+  .main-wrapper main div.people-container {
+    max-width: 60%;
+  }
+  .main-wrapper main div.people-container div.people {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+  .main-wrapper main div.people-container div.people article {
+    display: flex;
+    align-items: center;
+    max-width: 290px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .main-wrapper main div.people-container div.people article img {
+    margin-top: 20px;
+    border-radius: 5px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .main-wrapper main div.people-container div.people article h3 {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  .main-wrapper main div.people-container div.people article div {
+    background-color: rgba(32, 178, 171, 0.477);
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    max-height: 250px;
+    min-height: 250px;
+    max-width: inherit;
+    min-width: inherit;
+  }
+  .main-wrapper main div.people-container div.people article div p {
+    font-size: 20px;
+  }
+  .main-wrapper main div.people-container div.people article div p:nth-of-type(1) {
+    font-weight: 600;
+  }
+  .main-wrapper main div.people-container div.people article div p:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

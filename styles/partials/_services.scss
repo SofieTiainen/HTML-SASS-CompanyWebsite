@@ -18,9 +18,7 @@
             align-items: center;
 
             div.step {
-                // background-color: rgba(32, 178, 171, 0.788);
                 background-color: rgba(32, 178, 171, 0.477);
-
                 border-radius: 10px;
                 padding: 15px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.053);
@@ -89,7 +87,7 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px)  {
     .main-wrapper {
         main {
             h2 {
@@ -104,9 +102,6 @@
                 padding-left: 100px;
                 padding-right: 100px;
 
-                img {
-                    display: block;
-                }
 
                 div.step {
                     padding: 50px;
@@ -118,10 +113,6 @@
                     h3 {
                         font-size: 34px;
                     }
-
-                    p {
-                        font-size: 20px;
-                    }
                 }
 
             }
@@ -131,12 +122,12 @@
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
-                padding-left: 280px;
-                padding-right: 280px;
+                padding-left: 100px;
+                padding-right: 100px;
 
                 div.price-container {
-                    max-width: 320px;
-                    min-width: 30px;
+                    max-width: 330px;
+                    min-width: 330px;
                     max-height: 270px;
                     min-height: 270px;
 

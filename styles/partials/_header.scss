@@ -10,7 +10,7 @@
             z-index: 0;
             max-width: 100%;
             min-width: 100%;
-            height: 100vh;
+            max-height: 80vh;
         }
 
         button.main-action {
@@ -21,19 +21,21 @@
             max-width: 70%;
             text-align: center;
             letter-spacing: 2px;
-            background-color: lightgrey;
-            border-radius: 15px;
-            padding: 10px;
+            background-color: rgb(230, 230, 230);
+            border-radius: 20px;
+            padding: 5px;
+            border: 10px solid white;
+            box-shadow: inset 0px 0px 3px rgba(0,0,0,0.5);
 
             a {
                 color: black;
                 text-decoration: none;
-                font-size: 26px;
+                font-size: 22px;
             }
         }
 
         button.main-action:hover {
-            background-color: rgb(28, 155, 148);
+            background-color: rgb(32, 178, 171);
         }
     }
 
@@ -106,7 +108,6 @@
                         }
 
                         a:hover {
-                            // background-color: white;
                             background-color: rgba(32, 178, 171, 0.477);
                             border-radius: 10px;
                             padding: 5px;
@@ -125,17 +126,28 @@
         }
     }
 
-    // main {
-    //     div.info-first-page {
-    //         background-color: aqua;
-    //     }
-    // }
+    main.first-page {
+        div.info-first-page {
+            padding: 40px;
+            h2 {
+                color: black;
+            }
+            p {
+                color: black;
+                padding-top: 10px;
+            }
+        }
+    }
 
 }
 
 @media (min-width: 650px) {
     .main-wrapper {
         div.background-and-btn {
+            button.main-action {
+                bottom: -80px;
+                right: none;
+            }
             img.background-picture-mobile {
                 display: none;
             }
@@ -151,6 +163,22 @@
                 padding-right: 30px;
             }
         }
+
+        main.first-page {
+            div.info-first-page {
+                padding-top: 80px;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 40px;
+                h2 {
+                    color: black;
+                }
+                p {
+                    color: black;
+                    padding-top: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -159,8 +187,10 @@
     .main-wrapper {
         div.background-and-btn {
             button.main-action {
+                bottom: -100px;
+                right: none;
                 a {
-                    font-size: 40px;
+                    font-size: 30px;
                 }
             }
         }
@@ -208,6 +238,22 @@
                         }
                     }
 
+                }
+            }
+        }
+
+        main.first-page {
+            div.info-first-page {
+                padding-top: 120px;
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-bottom: 40px;
+                h2 {
+                    color: black;
+                }
+                p {
+                    color: black;
+                    padding-top: 10px;
                 }
             }
         }

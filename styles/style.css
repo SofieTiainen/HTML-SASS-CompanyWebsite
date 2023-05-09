@@ -35,29 +35,7 @@ body main {
   z-index: 0;
   max-width: 100%;
   min-width: 100%;
-  max-height: 80vh;
-}
-.main-wrapper div.background-and-btn button.main-action {
-  position: absolute;
-  bottom: 50px;
-  display: block;
-  z-index: 1;
-  max-width: 70%;
-  text-align: center;
-  letter-spacing: 2px;
-  background-color: rgb(230, 230, 230);
-  border-radius: 20px;
-  padding: 5px;
-  border: 10px solid white;
-  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.5);
-}
-.main-wrapper div.background-and-btn button.main-action a {
-  color: black;
-  text-decoration: none;
-  font-size: 22px;
-}
-.main-wrapper div.background-and-btn button.main-action:hover {
-  background-color: rgb(32, 178, 171);
+  height: 90vh;
 }
 .main-wrapper header.header {
   position: absolute;
@@ -156,7 +134,7 @@ body main {
     padding-right: 30px;
   }
   .main-wrapper main.first-page div.info-first-page {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
@@ -210,9 +188,9 @@ body main {
     font-size: 24px;
   }
   .main-wrapper main.first-page div.info-first-page {
-    padding-top: 120px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-top: 20px;
+    padding-left: 180px;
+    padding-right: 180px;
     padding-bottom: 40px;
   }
   .main-wrapper main.first-page div.info-first-page h2 {
